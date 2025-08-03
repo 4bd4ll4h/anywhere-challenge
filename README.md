@@ -1,6 +1,6 @@
 # Anyware Software Challenge - Student Dashboard
 
-> **Development Time**: Completed in 1 day using AI-assisted development workflow
+> **Development Time**: Completed in 1 day 
 
 A modern, full-stack student dashboard application for an online education platform. This project demonstrates enterprise-level architecture, security best practices, and responsive design principles in a complete learning management system.
 
