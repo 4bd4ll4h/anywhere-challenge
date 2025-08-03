@@ -1,0 +1,290 @@
+# ================================
+# Anyware Software Challenge
+# Full-Stack Project .gitignore
+# ================================
+
+# ================================
+# NODE.JS & NPM
+# ================================
+
+# Dependencies
+**/node_modules/
+**/jspm_packages/
+
+# NPM cache and logs
+.npm
+npm-debug.log*
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+pnpm-debug.log*
+lerna-debug.log*
+
+# Package lock files (keep only one)
+# package-lock.json  # Uncomment if using yarn or pnpm
+# yarn.lock          # Uncomment if using npm or pnpm
+# pnpm-lock.yaml     # Uncomment if using npm or yarn
+
+# ================================
+# BUILD OUTPUT & DISTRIBUTION
+# ================================
+
+# Frontend build output (Vite/React)
+frontend/dist/
+frontend/build/
+
+# Backend build output (TypeScript)
+backend/dist/
+backend/build/
+
+# Temporary build files
+*.tsbuildinfo
+
+# ================================
+# ENVIRONMENT & CONFIGURATION
+# ================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep backend test environment (not sensitive)
+# backend/.env.test
+
+# Configuration overrides
+config/local.json
+config/production.json
+
+# ================================
+# LOGS & MONITORING
+# ================================
+
+# Application logs
+logs/
+*.log
+backend/logs/
+
+# Winston logs
+combined.log
+error.log
+exceptions.log
+rejections.log
+
+# PM2 logs (if using PM2)
+.pm2/
+
+# ================================
+# DATABASE & STORAGE
+# ================================
+
+# MongoDB dumps
+*.dump
+data/
+db/
+
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Redis dumps
+dump.rdb
+
+# ================================
+# TESTING & COVERAGE
+# ================================
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+
+# Jest cache
+.jest/
+
+# Vitest cache
+.vitest/
+
+# ================================
+# FRONTEND SPECIFIC
+# ================================
+
+# Vite cache
+frontend/.vite/
+frontend/node_modules/.vite/
+
+# Parcel cache
+frontend/.parcel-cache/
+.cache/
+
+# Storybook
+frontend/storybook-static/
+
+# ================================
+# DEVELOPMENT TOOLS
+# ================================
+
+# VS Code settings (keep workspace settings, ignore user settings)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+.vscode-test/
+
+# WebStorm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ================================
+# OPERATING SYSTEM
+# ================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ================================
+# TEMPORARY & CACHE FILES
+# ================================
+
+# General temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ESLint cache
+.eslintcache
+
+# Prettier cache
+.prettiercache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ================================
+# SECURITY & SENSITIVE DATA
+# ================================
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+
+# API keys and secrets
+secrets/
+.secrets
+*.env.vault
+
+# Authentication tokens
+.auth
+tokens/
+
+# ================================
+# DEPLOYMENT & CI/CD
+# ================================
+
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Serverless
+.serverless/
+
+# ================================
+# MISC
+# ================================
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Optional REPL history
+.node_repl_history
+
+# ESM modules
+.esm-cache/
+
+# Rush stack
+common/temp/
+common/deploy/
+
+# ================================
+# PROJECT SPECIFIC
+# ================================
+
+# Uploaded files (if any)
+uploads/
+public/uploads/
+
+# Generated documentation
+docs/generated/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Local development scripts
+dev-setup.sh
+local-*.sh
+
+# ================================
+# KEEP THESE FILES
+# ================================
+# Files that should be committed:
+# - README.md
+# - package.json
+# - tsconfig.json
+# - .eslintrc.*
+# - .prettierrc.*
+# - backend/.env.test (for testing)
+# - public/ folder contents
+# ================================

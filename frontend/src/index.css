@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 199.4 100% 46.1%;
+  --secondary-foreground: 210 40% 98%;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  /* RTL Support with logical properties */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  
+  /* Logical properties for better RTL support */
+  .sidebar-item {
+    @apply flex items-center px-4 py-3 text-white rounded-lg transition-all duration-200 hover:bg-white hover:text-blue-600 cursor-pointer;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  
+  [dir="rtl"] .sidebar-item {
+    flex-direction: row-reverse;
+  }
+  
+  .sidebar-icon {
+    margin-inline-end: 0.75rem; /* mr-3 equivalent */
+  }
+  
+  [dir="rtl"] .sidebar-icon {
+    margin-inline-end: 0;
+    margin-inline-start: 0.75rem;
+  }
+  
+  /* Text alignment */
+  .text-start {
+    text-align: start;
+  }
+  
+  .text-end {
+    text-align: end;
+  }
+  
+  /* Logical margins and padding */
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+  
+  .me-auto {
+    margin-inline-end: auto;
+  }
+  
+  .ps-3 {
+    padding-inline-start: 0.75rem;
+  }
+  
+  .pe-3 {
+    padding-inline-end: 0.75rem;
+  }
+}
+
+@layer components {
+  .sidebar-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-cyan-500 text-white;
+  }
+  
+  .sidebar-item:hover .sidebar-icon {
+    @apply text-blue-600;
+  }
+  
+  .sidebar-item.active .sidebar-icon {
+    @apply text-white;
+  }
+} 

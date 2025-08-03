@@ -1,0 +1,71 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "dashboard": "Dashboard",
+    "schedule": "Schedule",
+    "courses": "Courses",
+    "gradebook": "Gradebook",
+    "performance": "Performance",
+    "announcement": "Announcement",
+    "logout": "Logout",
+    "search": "Search",
+    "loading": "Loading...",
+    "noData": "No data available"
+  },
+  "home": {
+    "title": "Welcome to Coligo",
+    "subtitle": "Your Student Dashboard",
+    "description": "Access your courses, announcements, and assignments all in one place. Stay organized and never miss important updates from your teachers.",
+    "loginButton": "Login to Dashboard",
+    "loggingIn": "Logging in...",
+    "features": {
+      "courseManagement": {
+        "title": "Course Management",
+        "description": "Access all your courses and materials in one organized dashboard."
+      },
+      "assignments": {
+        "title": "Assignments & Quizzes",
+        "description": "Track your assignments and quizzes with due dates and progress."
+      },
+      "announcements": {
+        "title": "Announcements",
+        "description": "Stay updated with important announcements from your teachers."
+      },
+      "performance": {
+        "title": "Performance Tracking",
+        "description": "Monitor your academic performance and progress over time."
+      }
+    }
+  },
+  "dashboard": {
+    "welcomeMessage": "Here's what's happening with your courses today.",
+    "examsBanner": {
+      "title": "EXAMS TIME",
+      "subtitle": "Here we are, Are you ready to fight? Don't worry, we prepared some tips to be ready for your exams.",
+      "quote": "\"Nothing happens until something moves\" - Albert Einstein",
+      "button": "View exams tips",
+      "description": "Study smart, not hard. Use our proven techniques to ace your exams."
+    },
+    "announcements": {
+      "title": "Announcements",
+      "noAnnouncements": "No announcements available."
+    },
+    "quizzes": {
+      "title": "What's due",
+      "noQuizzes": "No upcoming assignments or quizzes.",
+      "startQuiz": "Start Quiz",
+      "solveAssignment": "Solve Assignment",
+      "due": "Due",
+      "remaining": "remaining",
+      "dueSoon": "Due soon!"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "loginSuccess": "Login successful",
+    "logoutSuccess": "Logout successful",
+    "loginFailed": "Login failed",
+    "logoutFailed": "Logout failed"
+  }
+} 

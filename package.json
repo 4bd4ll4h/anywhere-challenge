@@ -1,0 +1,22 @@
+{
+  "name": "anyware-software-challenge",
+  "version": "1.0.0",
+  "description": "Student dashboard for online education platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd backend && npm test",
+    "test:client": "cd frontend && npm test",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["education", "dashboard", "react", "express", "mongodb"],
+  "author": "Anyware Software Challenge",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
